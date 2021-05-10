@@ -1,12 +1,12 @@
 package com.tts;
 
-public class Entry{
+public class Entry extends Main{
     private String fName;
     private String lName;
     private String email;
-    private String phoneNum;
+    private int phoneNum;
 
-    Entry(String fName, String lName, String email, String phoneNum){
+    Entry(String fName, String lName, String email, int phoneNum){
         this.fName = fName;
         this.lName = lName;
         this.email = email;
@@ -16,10 +16,10 @@ public class Entry{
         fName = "";
         lName = "";
         email = "";
-        phoneNum = "";
+        phoneNum =0;
     }
 
-    public void addEntry(String fName, String lName, String email, String phoneNum) {
+    public void addEntry(String fName, String lName, String email, int phoneNum) {
         new Entry(fName, lName, email, phoneNum);
     }
 
@@ -48,11 +48,11 @@ public class Entry{
         this.email = email;
     }
 
-    public String getPhoneNum() {
+    public int getPhoneNum() {
         return phoneNum;
     }
 
-    public void setPhoneNum(String phoneNum) {
+    public void setPhoneNum(int phoneNum) {
         this.phoneNum = phoneNum;
     }
 
