@@ -16,7 +16,7 @@ public class Entry extends Main{
         fName = "";
         lName = "";
         email = "";
-        phoneNum =0;
+        phoneNum= 0;
     }
 
     public void addEntry(String fName, String lName, String email, int phoneNum) {
