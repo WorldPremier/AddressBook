@@ -1,10 +1,28 @@
 package com.tts;
 
-public class Entry {
+public class Entry{
     private String fName;
     private String lName;
     private String email;
     private String phoneNum;
+
+    Entry(String fName, String lName, String email, String phoneNum){
+        this.fName = fName;
+        this.lName = lName;
+        this.email = email;
+        this.phoneNum = phoneNum;
+    }
+    Entry(){
+        fName = "";
+        lName = "";
+        email = "";
+        phoneNum = "";
+    }
+
+    public void addEntry(String fName, String lName, String email, String phoneNum) {
+        new Entry(fName, lName, email, phoneNum);
+    }
+
 
     public String getfName() {
         return fName;

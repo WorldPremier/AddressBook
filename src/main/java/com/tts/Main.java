@@ -5,7 +5,7 @@ import com.tts.AddressBook;
 import java.util.*;
 
 public class Main<Int> {
-
+public static int entryInput;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class Main<Int> {
                 "5) Delete Book\n" +
                 "6) Quit\n" +
                 "Please choose what you'd like to do with the database:\n");
-        int entryInput = sc.nextInt();
+        entryInput = sc.nextInt();
 
     }
 
