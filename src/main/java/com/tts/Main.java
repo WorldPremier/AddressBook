@@ -1,12 +1,10 @@
 package com.tts;
 import org.w3c.dom.ls.LSOutput;
-
+import com.tts.AddressBook;
 
 import java.util.*;
 
 public class Main<Int> {
-
-
 
 
     public static void main(String[] args) {
@@ -19,11 +17,6 @@ public class Main<Int> {
                 "6) Quit\n" +
                 "Please choose what you'd like to do with the database:\n");
         int entryInput = sc.nextInt();
-
-
-
-
-
 
     }
 
