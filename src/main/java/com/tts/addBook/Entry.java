@@ -1,12 +1,12 @@
-package com.tts;
+package com.tts.addBook;
 
-public class Entry extends Main{
+public class Entry{
     private String fName;
     private String lName;
     private String email;
-    private int phoneNum;
+    private String phoneNum;
 
-    Entry(String fName, String lName, String email, int phoneNum){
+    Entry(String fName, String lName, String email, String phoneNum){
         this.fName = fName;
         this.lName = lName;
         this.email = email;
@@ -16,10 +16,10 @@ public class Entry extends Main{
         fName = "";
         lName = "";
         email = "";
-        phoneNum= 0;
+        phoneNum = "";
     }
 
-    public void addEntry(String fName, String lName, String email, int phoneNum) {
+    public void addEntry(String fName, String lName, String email, String phoneNum) {
         new Entry(fName, lName, email, phoneNum);
     }
 
@@ -48,11 +48,11 @@ public class Entry extends Main{
         this.email = email;
     }
 
-    public int getPhoneNum() {
+    public String getPhoneNum() {
         return phoneNum;
     }
 
-    public void setPhoneNum(int phoneNum) {
+    public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
     }
 
@@ -65,4 +65,15 @@ public class Entry extends Main{
                 ", phoneNum='" + phoneNum + '\'' +
                 '}';
     }
+
+    public String tableDisplay(){
+        return
+                "firstName= " + fName + '\t' +
+                        "lastName= " + lName + '\t' +
+                        "phoneNumber= " + Validation.formatPhoneNumber(phoneNum) + '\n' +
+                        "emailAddress= " + email + '\t' +
+                        "*************************************\t\n"
+                ;
+    }
+
 }
